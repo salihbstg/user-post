@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(44deg,#349,#45b,#56f);
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+}
+#post-form{
+    display: flex;
+    flex-direction: column;
+}
+textarea{
+    margin: 0px 10px;
+    border-radius: 5px;
+}
+.pdiv{
+    display: flex;
+    gap: 30px;
+}
+.pdiv div{
+    width: 300px;
+    word-wrap: break-word;
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 26px;
+    padding: 10px;
+}
+#post-form input[type="submit"]{
+    width: 50%;
+    margin: 10px auto 0 auto;
+    padding: 10px;
+    border-radius: 40px;
+}
+#submit-form{
+    height: 400px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#submit-form input[type='text']{
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#submit-form input[type='submit']{
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 40px;
+}
+footer{
+    width: 100%;
+    text-align: end;
+    padding-right: 40px;
+    padding-bottom: 30px;
+}
+p{
+    text-align: center;
+    background-color: #45b;
+}

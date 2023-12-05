@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>PostApp</title>
+</head>
+
+<body>
+    <div class="pdiv">
+        <% if(locals.username && locals.pass && locals.data){ locals.data.forEach(element=> {%>
+            <div><p>
+                <%=element %>
+            </p></div>
+            <%});%>
+    </div>
+    <form id="post-form" action="newPost" method="post">
+        <textarea name="txt" id="txt" cols="60" rows="20"></textarea>
+        <input type="submit" value="Post">
+    </form>
+    <%} else{ %>
+        <%- include("./partials/form.ejs") %>
+            <% } %>
+
+                <%- include("./partials/footer.ejs") %>
